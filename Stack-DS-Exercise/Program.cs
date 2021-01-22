@@ -6,15 +6,19 @@ namespace Stack_DS_Exercise
     {
         static void Main(string[] args)
         {
-            Stack stack = new Stack();
-
-            stack.Push("Hi");
-            Console.WriteLine(stack.Pop());
-            stack.Push("HiHi");
-            stack.Push("Hello");
+            var stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
             stack.Push(3);
             Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
             stack.Clear();
+            Console.WriteLine(stack.Pop());
         }
     }
 }
